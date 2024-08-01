@@ -2,6 +2,7 @@
 simple marcro to crop all images in the same folder with ImageJ
 
 /////////////////////////////////////////////////////////////////////
+
 // Ask for the input folder
 inputDirectory = getDirectory("Choose a Directory");
 outputDirectory = inputDirectory; // Save the cropped images in the same folder
@@ -35,7 +36,9 @@ for (i = 0; i < list.length; i++) {
     // Close the image
     close();
 }
+
 ////////////////////////////////////////////////////////
+
 **Instructions to Run the Script:**
 
 1. Copy the script above.
