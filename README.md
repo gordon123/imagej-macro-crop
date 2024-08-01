@@ -35,13 +35,15 @@ for (i = 0; i < list.length; i++) {
     close();
 }
 
-Instructions to Run the Script:
-Copy the script above.
-Open ImageJ.
-Go to Plugins > New > Macro.
-Paste the script into the new macro window.
-Run the macro by clicking on the "Run" button (the triangle icon).
-Explanation:
+**Instructions to Run the Script:**
+
+1. Copy the script above.
+2. Open ImageJ.
+3. Go to Plugins > New > Macro.
+4. Paste the script into the new macro window.
+5. Run the macro by clicking on the "Run" button (the triangle icon).
+
+**Explanation:**
 The script prompts the user to choose a directory containing the images.
 It then lists all files in that directory.
 For each file, it opens the image, calculates the new dimensions for cropping (50 pixels removed from both left and right), performs the crop, and saves the image in the same directory with the same name but in TIFF format.
