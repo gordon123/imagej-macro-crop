@@ -33,7 +33,7 @@ for (i = 0; i < list.length; i++) {
 // Save the cropped image in TIFF format
     saveAs("Tiff", outputDirectory + list[i]);
     
-    // Close the image
+// Close the image
     close();
 }
 
