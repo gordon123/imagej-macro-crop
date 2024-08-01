@@ -1,6 +1,7 @@
 # imagej-macro-crop
 simple marcro to crop all images in the same folder with ImageJ
 
+/////////////////////////////////////////////////////////////////////
 // Ask for the input folder
 inputDirectory = getDirectory("Choose a Directory");
 outputDirectory = inputDirectory; // Save the cropped images in the same folder
@@ -12,29 +13,29 @@ list = getFileList(inputDirectory);
 for (i = 0; i < list.length; i++) {
     filePath = inputDirectory + list[i];
     
-    // Open the image
+// Open the image
     open(filePath);
     
-    // Get image dimensions
+// Get image dimensions
     width = getWidth();
     height = getHeight();
     
-    // Define the crop region
+// Define the crop region
     leftCrop = 50;
     rightCrop = 50;
     newWidth = width - leftCrop - rightCrop;
     
-    // Perform the crop
+// Perform the crop
     makeRectangle(leftCrop, 0, newWidth, height);
     run("Crop");
     
-    // Save the cropped image in TIFF format
+// Save the cropped image in TIFF format
     saveAs("Tiff", outputDirectory + list[i]);
     
     // Close the image
     close();
 }
-
+////////////////////////////////////////////////////////
 **Instructions to Run the Script:**
 
 1. Copy the script above.
